@@ -33,6 +33,12 @@ namespace ConsoleApp6
                     continue;
                 }
             }
+            int sum=0;
+            for(int l = 0; l <= 5; l++)
+            {
+                sum += l;
+            }
+            Console.WriteLine("The sum is " + sum);
             Console.WriteLine("Press any key to exit program.");
             Console.ReadKey();
         }
