@@ -14,10 +14,26 @@ namespace ConsoleApp6
             {
                 if (i % 2 == 0)
                 {
-                    Console.WriteLine(i);
+                    Console.Write(i+", ");
                 }
 
             }
+            bool runProgram = true;
+            while (runProgram == true)
+            {
+                Console.WriteLine("\nDo you want to keep going? y/n");
+                string answerYN = Console.ReadLine();
+               
+                if (answerYN.ToLower() == "n")
+                {
+                    runProgram = false;
+                }
+                else
+                {
+                    continue;
+                }
+            }
+            Console.WriteLine("Press any key to exit program.");
             Console.ReadKey();
         }
     }
